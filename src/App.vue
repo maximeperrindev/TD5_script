@@ -1,20 +1,13 @@
 <template>
   <div id="app">
+    <nav>
+    <router-link to="/counter">Counter</router-link>
+    <router-link to="/reverser">String reverser</router-link>
+    </nav>
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <router-view></router-view>
   </div>
 </template>
-
-<script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
-</script>
 
 <style>
 #app {
